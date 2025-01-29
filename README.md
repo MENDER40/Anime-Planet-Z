@@ -1,2 +1,0 @@
-# Anime-Planet-Z
-akdhjdksksk
