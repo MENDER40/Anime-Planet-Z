@@ -85,11 +85,12 @@ local Tabs = {
 }
 Tabs.Main:AddParagraph({
         Title = "Esse script esta em update",
-        Content = "+Add open eggs"
+        Content = "Script atualizando "
     })
 
 local Tabs = {
-    Main= Window:AddTab({ Title = "| Farm", Icon = "rbxassetid://18831424669" })
+    Main= Window:AddTab({ Title = "| Farm", Icon = "rbxassetid://18831424669" }),
+     Tp = Window:AddTab({ Title = "| Tp", Icon = "rbxassetid://18831424669" })
 }
 local AutoClick= Tabs.Main:AddToggle("Naruto", {Title = "Auto energy", Default = false})
 AutoClick:OnChanged(function()
@@ -150,9 +151,10 @@ AutoClick:OnChanged(function()
     while AutoClick.Value do
 --remote
 local args = {
-    [1] = "Sword"
-    }
-       game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+    [1] = "Sword Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -177,7 +179,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "DBZ Egg"
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -189,7 +191,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "CrazyVillageEgg"
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
       wait(0)
     end
 end)
@@ -201,7 +203,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "Cursed Egg"
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
       wait(0)
     end
 end)
@@ -212,7 +214,153 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "OneHeroEgg"
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
-      wait(0.2)
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+      wait(0)
     end
 end)
+
+Main:AddButton({
+    Title = "Naruto",
+    Callback = function()
+--naruto
+local targetCFrame = CFrame.new(-726.696594, 13.8924885, -970.772095, 
+    -4.30345535e-05, 0.984805167, 0.173663586, 
+    1.00000012, 4.27365303e-05, 3.75509262e-06, 
+    -3.75509262e-06, 0.173663586, -0.984805346)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "one piece",
+    Callback = function()
+--one piece island
+local targetCFrame = CFrame.new(822.80011, 16.3026886, 8962.32031, 0.984812498, 0, 0.173621148, 0, 1, 0, -0.173621148, 0, 0.984812498)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "demon slayer",
+    Callback = function()
+--demon slayer
+local targetCFrame = CFrame.new(-6692.2417, 21.1733074, 1327.24316, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "nanatsu",
+    Callback = function()
+--nanatsu
+local targetCFrame = CFrame.new(3941.05078, 14.6696835, -2489.9209, 0.965929627, 0, 0.258804798, 0, 1, 0, -0.258804798, 0, 0.965929627)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "clover sland",
+    Callback = function()
+--clover island
+local targetCFrame = CFrame.new(-3975.57617, 76.8834457, 9807.3916, -0.978162646, 0, -0.20784153, 0, 1, 0, 0.20784153, 0, -0.978162646)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "dragon ball",
+    Callback = function()
+--dragon ball
+local targetCFrame = CFrame.new(-726.287842, 12.9664917, 1175.84937, 0.984812498, -0, -0.173621148, 0, 1, -0, 0.173621148, 0, 0.984812498)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "crazy",
+    Callback = function()
+--crazy village
+local targetCFrame = CFrame.new(49047.3164, 125.852577, 1175.00879, 0.984812498, -0, -0.173621148, 0, 1, -0, 0.173621148, 0, 0.984812498)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "Cursed dojo",
+    Callback = function()
+--cursed dojo
+local targetCFrame = CFrame.new(49047.3164, 125.852577, 1175.00879, 0.984812498, -0, -0.173621148, 0, 1, -0, 0.173621148, 0, 0.984812498)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFram
+print("Concluido")
+    end
+})
+
+Main:AddButton({
+    Title = "One punch",
+    Callback = function()
+local targetCFrame = CFrame.new(-23691.7109, -21.3596802, 473.658325, 0.977745593, 0, 0.209794015, 0, 1, 0, -0.209794015, 0, 0.977745593)
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local HRT = character:WaitForChild("HumanoidRootPart")
+
+HRT.CFrame = targetCFrame
+ print("Concluido")
+    end
+})
