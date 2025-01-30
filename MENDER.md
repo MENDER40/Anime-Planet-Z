@@ -90,8 +90,7 @@ Tabs.Main:AddParagraph({
 
 local Tabs = {
     Main= Window:AddTab({ Title = "| Farm", Icon = "rbxassetid://18831424669" }),
-     Tp = Window:AddTab({ Title = "| Tp", Icon = "rbxassetid://18831424669" })
-}
+     }
 local AutoClick= Tabs.Main:AddToggle("Naruto", {Title = "Auto energy", Default = false})
 AutoClick:OnChanged(function()
     while AutoClick.Value do
@@ -219,7 +218,8 @@ AutoClick:OnChanged(function()
     end
 end)
 
-Main:AddButton({
+local TeleportTab = Window:AddTab({ Title = "Teleports", Icon = "sword" })
+TeleportTab:AddButton({
     Title = "Naruto",
     Callback = function()
 --naruto
@@ -238,7 +238,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "one piece",
     Callback = function()
 --one piece island
@@ -254,7 +254,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "demon slayer",
     Callback = function()
 --demon slayer
@@ -270,7 +270,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "nanatsu",
     Callback = function()
 --nanatsu
@@ -286,7 +286,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "clover sland",
     Callback = function()
 --clover island
@@ -302,7 +302,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "dragon ball",
     Callback = function()
 --dragon ball
@@ -318,7 +318,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "crazy",
     Callback = function()
 --crazy village
@@ -334,7 +334,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "Cursed dojo",
     Callback = function()
 --cursed dojo
@@ -350,7 +350,7 @@ print("Concluido")
     end
 })
 
-Main:AddButton({
+TeleportTab:AddButton({
     Title = "One punch",
     Callback = function()
 local targetCFrame = CFrame.new(-23691.7109, -21.3596802, 473.658325, 0.977745593, 0, 0.209794015, 0, 1, 0, -0.209794015, 0, 0.977745593)
@@ -364,3 +364,4 @@ HRT.CFrame = targetCFrame
  print("Concluido")
     end
 })
+
