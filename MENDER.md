@@ -170,3 +170,50 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
         wait(0)
     end
 end)
+
+local AutoClick= Tabs.Main:AddToggle("Fast egg", {Title = "Fast egg DBZ", Default = false})
+AutoClick:OnChanged(function()
+    while AutoClick.Value do
+--remote
+    local args = {
+        [1] = "DBZ Egg"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+        wait(0)
+    end
+end)
+
+local AutoClick= Tabs.Main:AddToggle("Fast egg", {Title = "Fast egg Crazy village", Default = false})
+AutoClick:OnChanged(function()
+    while AutoClick.Value do
+--remote
+    local args = {
+        [1] = "CrazyVillageEgg"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+      wait(0)
+    end
+end)
+
+local AutoClick= Tabs.Main:AddToggle("Fast egg", {Title = "Fast egg cursed", Default = false})
+AutoClick:OnChanged(function()
+    while AutoClick.Value do
+--remote
+    local args = {
+        [1] = "Cursed Egg"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+      wait(0)
+    end
+end)
+
+local AutoClick= Tabs.Main:AddToggle("Fast egg", {Title = "Fast egg one hero", Default = false})
+AutoClick:OnChanged(function()
+    while AutoClick.Value do
+    local args = {
+        [1] = "OneHeroEgg"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+      wait(0)
+    end
+end)
