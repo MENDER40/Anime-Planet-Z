@@ -85,7 +85,7 @@ local Tabs = {
 }
 Tabs.Main:AddParagraph({
         Title = "Esse script esta em update",
-        Content = "Script atualizando "
+        Content = "+Add open eggs"
     })
 
 local Tabs = {
@@ -114,7 +114,7 @@ local args = {
     [1] = "Naruyu Egg"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -127,7 +127,7 @@ local args = {
     [1] = "Pyocy Egg"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -140,7 +140,7 @@ local args = {
     [1] = "Sleyer Egg"
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Eclicked"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -178,7 +178,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "DBZ Egg"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
         wait(0)
     end
 end)
@@ -190,7 +190,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "CrazyVillageEgg"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
       wait(0)
     end
 end)
@@ -202,7 +202,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "Cursed Egg"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
       wait(0)
     end
 end)
@@ -213,7 +213,7 @@ AutoClick:OnChanged(function()
     local args = {
         [1] = "OneHeroEgg"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Eclicked:FireServer(unpack(args))
-      wait(0)
+    game:GetService("ReplicatedStorage").RemoteEvents.CodePet:FireServer(unpack(args))
+      wait(0.2)
     end
 end)
