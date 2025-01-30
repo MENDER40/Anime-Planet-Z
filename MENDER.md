@@ -339,7 +339,9 @@ TeleportTab:AddButton({
     Callback = function()
 --cursed dojo
 local targetCFrame = CFrame.new(49047.3164, 125.852577, 1175.00879, 0.984812498, -0, -0.173621148, 0, 1, -0, 0.173621148, 0, 0.984812498)
-
+print("Concluido")
+    end
+})
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
